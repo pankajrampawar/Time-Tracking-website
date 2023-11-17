@@ -1,80 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+  <body>
+    <div class="card-holder">
+      <!-- User Card  -->
+      <div class="user-card-holder">
+        <div class="user-card">
+          <img src="./images/image-jeremy.png" alt="Jeremy" class="jeremy" />
+          <span class="subtext">Report for</span>
+          <span class="name">Jeremy Robson</span>
+        </div>
 
-  Report for
-  Jeremy Robson
+        <div class="user-option">
+          <span class="time-period daily">Daily</span>
+          <span class="time-period weekly">Weekly</span>
+          <span class="time-period monthly">Monthly</span>
+        </div>
+      </div>
 
-  Daily
-  Weekly
-  Monthly
+      <!-- Elements card section -->
+      <div class="cards">
+        <div class="first-row">
+          <!-- Work Card -->
+          <div class="card work">
+            <img src="./images/icon-work.svg" alt="bag" class="card-image" />
+            <div class="inner-card">
+              <div class="top-part">
+                <span class="inner-card-title">Work</span>
+                <div><img src="./images/icon-ellipsis.svg" /></div>
+              </div>
+              <div class="bottom-part">
+                <span class="hours daily">5hrs</span>
+                <span class="hours weekly" style="display: none">32hrs</span>
+                <span class="hours monthly" style="display: none" hidden
+                  >103hrs</span
+                >
+                <span class="comparison daily">Yesterday - 7hrs</span>
+                <span class="comparison weekly" style="display: none"
+                  >Last Week - 36hrs</span
+                >
+                <span class="comparison monthly" style="display: none"
+                  >Last Month - 128hrs</span
+                >
+              </div>
+            </div>
+          </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+          <!-- Play Card -->
+          <div class="card play">
+            <img
+              src="./images/icon-play.svg"
+              alt="play-image"
+              class="card-image"
+            />
+            <div class="inner-card">
+              <div class="top-part">
+                <span class="inner-card-title">Play</span>
+                <div><img src="./images/icon-ellipsis.svg" /></div>
+              </div>
+              <div class="bottom-part">
+                <span class="hours daily">1hrs</span>
+                <span class="hours weekly" style="display: none">10hrs</span>
+                <span class="hours monthly" style="display: none" hidden
+                  >23hrs</span
+                >
+                <span class="comparison daily">Yesterday - 2hrs</span>
+                <span class="comparison weekly" style="display: none" hidden
+                  >Last Week - 8hrs</span
+                >
+                <span class="comparison monthly" style="display: none"
+                  >Last Month - 29hrs</span
+                >
+              </div>
+            </div>
+          </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+          <!-- Study Card -->
+          <div class="card study">
+            <img src="./images/icon-study.svg" alt="book" class="card-image" />
+            <div class="inner-card">
+              <div class="top-part">
+                <span class="inner-card-title">Study</span>
+                <div><img src="./images/icon-ellipsis.svg" /></div>
+              </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+              <div class="bottom-part">
+                <span class="hours daily">0hrs</span>
+                <span class="hours weekly" style="display: none">4hrs</span>
+                <span class="hours monthly" style="display: none" hidden
+                  >13hrs</span
+                >
+                <span class="comparison daily">Yesterday - 1hr</span>
+                <span class="comparison weekly" style="display: none" hidden
+                  >Last Week - 7hrs</span
+                >
+                <span class="comparison monthly" style="display: none"
+                  >Last Month - 19hrs</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-row">
+          <!--Exercise  Card -->
+          <div class="card exercise">
+            <img
+              src="./images/icon-exercise.svg"
+              alt="exercise"
+              class="card-image"
+            />
+            <div class="inner-card">
+              <div class="top-part">
+                <span class="inner-card-title">Exercise</span>
+                <div><img src="./images/icon-ellipsis.svg" /></div>
+              </div>
+              <div class="bottom-part">
+                <span class="hours daily">1hr</span>
+                <span class="hours weekly" style="display: none">4hrs</span>
+                <span class="hours monthly" style="display: none" hidden
+                  >11hrs</span
+                >
+                <span class="comparison daily">Yesterday - 1hr</span>
+                <span class="comparison weekly" style="display: none" hidden
+                  >Last Week - 5hrs</span
+                >
+                <span class="comparison monthly" style="display: none"
+                  >Last Mont - 18hrs</span
+                >
+              </div>
+            </div>
+          </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+          <!-- Social Card -->
+          <div class="card social">
+            <img
+              src="./images/icon-social.svg"
+              alt="chat icon"
+              class="card-image"
+            />
+            <div class="inner-card">
+              <div class="top-part">
+                <span class="inner-card-title">Social</span>
+                <div><img src="./images/icon-ellipsis.svg" /></div>
+              </div>
+              <div class="bottom-part">
+                <span class="hours daily">1hrs</span>
+                <span class="hours weekly" style="display: none">5hrs</span>
+                <span class="hours monthly" style="display: none" hidden
+                  >21hrs</span
+                >
+                <span class="comparison daily">Yesterday - 3hrs</span>
+                <span class="comparison weekly" style="display: none" hidden
+                  >Last Week - 10hrs</span
+                >
+                <span class="comparison monthly" style="display: none"
+                  >Last Month - 23hrs</span
+                >
+              </div>
+            </div>
+          </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+          <!-- Self Care Card -->
+          <div class="card self-care">
+            <img
+              src="./images/icon-self-care.svg"
+              alt="Heart with Plus"
+              class="card-image"
+            />
+            <div class="inner-card">
+              <div class="top-part">
+                <span class="inner-card-title">Self Care</span>
+                <div><img src="./images/icon-ellipsis.svg" /></div>
+              </div>
+              <div class="bottom-part">
+                <span class="hours daily">0hrs</span>
+                <span class="hours weekly" style="display: none">2hrs</span>
+                <span class="hours monthly" style="display: none" hidden
+                  >7hrs</span
+                >
+                <span class="comparison daily">Yesterday - 1hr</span>
+                <span class="comparison weekly" style="display: none" hidden
+                  >Last Week - 2hrs</span
+                >
+                <span class="comparison monthly" style="display: none"
+                  >Last Month - 11hrs</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var dailySpan = document.querySelector(".time-period.daily");
+        var weeklySpan = document.querySelector(".time-period.weekly");
+        var monthlySpan = document.querySelector(".time-period.monthly");
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        dailySpan.addEventListener("click", function () {
+          toggleVisibility("daily");
+        });
+
+        weeklySpan.addEventListener("click", function () {
+          toggleVisibility("weekly");
+        });
+
+        monthlySpan.addEventListener("click", function () {
+          toggleVisibility("monthly");
+        });
+
+        function toggleVisibility(selectedPeriod) {
+          resetVisibility();
+
+          if (selectedPeriod === "daily") {
+            document
+              .querySelectorAll(".hours.daily, .comparison.daily")
+              .forEach((element) => {
+                element.style.display = "block";
+              });
+          }
+          if (selectedPeriod === "weekly") {
+            document
+              .querySelectorAll(".hours.weekly, .comparison.weekly")
+              .forEach((element) => {
+                element.style.display = "block";
+              });
+          }
+          if (selectedPeriod === "monthly") {
+            document
+              .querySelectorAll(".hours.monthly, .comparison.monthly")
+              .forEach((element) => {
+                element.style.display = "block";
+              });
+          }
+        }
+
+        function resetVisibility() {
+          document
+            .querySelectorAll(".hours, .comparison")
+            .forEach((element) => {
+              element.style.display = "none";
+            });
+        }
+      });
+    </script>
+  </body>
 </html>

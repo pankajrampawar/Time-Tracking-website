@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Roboto:wght@400;700&family=Rubik:ital,wght@0,300;0,500;1,400&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Rubik;
+    font-weight: 300;
+}
+
+.card-holder {
+    display: flex;
+    width: 1100px;
+    height: 500px;
+    gap: 20px
+}
+
+.user-card-holder {
+    max-height: 500px;
+    max-width: 245px;
+    min-height: 500px;
+    min-width: 245px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color:  hsl(235, 46%, 20%);
+}
+
+.jeremy {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 4px white;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    background-color:hsl(246, 80%, 60%);
+    border-radius: 20px;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.subtext {
+    color:  hsl(236, 100%, 87%);
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.user-option {
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    color:hsl(236, 100%, 87%); 
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.time-period:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 10px;
+    color: white;
+}
+
+.user-option, .inner-card {
+    background-color: hsl(235, 46%, 20%);
+}
+
+.cards {
+    display:flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.first-row {
+    display: flex;
+    gap: 20px;
+}
+.second-row {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 245px;
+    height: 240px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.work {
+    background-color:  hsl(15, 100%, 70%);
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%)
+    
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.play {
+    background-color:hsl(195, 74%, 62%);
+}
+
+.self-care {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.card-image {
+    margin-left: 160px;
+}
+
+.inner-card {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.inner-card:hover {
+    background-color: hsl(235, 40%, 41%);
+    cursor: pointer;
+}
+
+.top-part {
+    display:flex;
+    justify-content: space-between;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+.bottom-part {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.inner-card-title {
+    font-size: 18px;
+    letter-spacing: normal;
+    font-weight: 400;
+}
+
+.hours {
+    font-size: 40px;
+}
+
+.comparison {
+    color: hsl(236, 100%, 87%)
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .card-holder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-row, .second-row {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .card-holder, .user-card-holder, .cards, .card, .user-card, .user-option {
+        width: 100%;
+    }
+
+    .user-card-holder {
+        max-width: none;
+        min-height: 240px;
+        max-height: none;
+        height: auto; 
+    }
+
+    .user-card {
+        box-sizing: border-box;
+    }
+
+    .name, .jeremy, .subtext {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .user-option {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .name {
+        font-size: x-large;
+    }
+    .jeremy {
+        margin-bottom: 5px;
+    }
+}
+
+
