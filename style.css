@@ -200,7 +200,7 @@ body {
     .first-row, .second-row {
         display: flex;
         flex-direction: column;
-        gap: 2px;
+        gap: 5px;
     }
 
     .card-holder, .user-card-holder, .cards, .card, .user-card, .user-option {
